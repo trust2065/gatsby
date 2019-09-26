@@ -1,7 +1,8 @@
 ---
 path: "/second-post"
-
 title: "Second Blog post"
+published: true
+date: "27-09-2019"
 ---
 
 Hi guys

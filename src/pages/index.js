@@ -19,22 +19,27 @@ const IndexPage = ({ data }) => {
       </div>
       <Link to="/page-2/">Go to page 2</Link>
       <Link to="/page-3/">Go to page 3</Link>
-      {postList.map(post => {
-        const { path, title } = post.node.frontmatter
-        const { id } = post.node
-        return (
-          <Link key={id} to={path}>
-            {title}
-          </Link>
-        )
-      })}
+      <ul>
+        {postList.map(post => {
+          const { path, title } = post.node.frontmatter
+          const { id } = post.node
+          return (
+            <li key={id}>
+              <Link to={path}>{title}</Link>
+            </li>
+          )
+        })}
+      </ul>
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(
+      filter: { frontmatter: { published: { eq: true } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           id
