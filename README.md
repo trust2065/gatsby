@@ -1,12 +1,16 @@
-# Document
+# This is a project build with Gatsby, the goal is to build a project with GraphQL
+
+## Document
+
+Record learning resources and notes
 
 <https://paper.dropbox.com/doc/learning-Gatsby--AldbnW_vKC2iQ5IuhoJAIpAsAg-90vMg0EUbYrmdGgjrqzyQ>
 
-This is a project build with Gatsby, the goal is to build a project with GraphQL
-
 ## Run
 
-`yarn develop`
+run `yarn develop` in cmd line
+then we can find website in `http://localhost:8000`
+and GraphiQL tool page in `http://localhost:8000/__graphql`
 
 ## GraphQL
 
@@ -40,7 +44,7 @@ graphql(`
 })
 ```
 
-In `index.js`, we query data and use it to create links for each pages
+In `index.js`, we query data and use it to create links for each page
 
 ```javascript
 graphql`
@@ -62,7 +66,7 @@ graphql`
   }
 ```
 
-In `post.js`, query data with GraphQL code below
+In `post.js`, query data with matched path
 
 ```javascript
 graphql`
@@ -77,7 +81,7 @@ graphql`
   }
 ```
 
-Then we use fetched data, insert as `props` into our `component`
+Then we use fetched data, insert it as `props` into our Component
 
 ```javascript
 export ({ data }) => {
