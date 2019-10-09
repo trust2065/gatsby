@@ -6,6 +6,10 @@ Record learning resources and notes
 
 <https://paper.dropbox.com/doc/learning-Gatsby--AldbnW_vKC2iQ5IuhoJAIpAsAg-90vMg0EUbYrmdGgjrqzyQ>
 
+## Url
+
+<https://fervent-shannon-a32890.netlify.com/>
+
 ## Run
 
 run `yarn develop` in cmd line
