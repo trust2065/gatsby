@@ -5,12 +5,12 @@ published: true
 date: "27-09-2019"
 ---
 
-Hi guys
+Hello folks!
 
 ## This is the second article
 
-whatever
+This is the first part of content in 27-09-2019
 
 ## This is the second article2
 
-whatever
+This is the second part of content in 27-09-2019

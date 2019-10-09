@@ -9,8 +9,8 @@ Hi guys
 
 ## This is the first article
 
-whatever
+This is the first part of content
 
 ## This is the first article2
 
-whatever
+This is the second part of content
