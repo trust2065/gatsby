@@ -112,3 +112,14 @@ Examples of XSS attack
 <a href="javascript:alert('XSS')">Redirect...</a>
 
 ```
+
+Solution for prevent risk of `dangerouslySetInnerHTML`
+<https://www.dev.education/blog/2019/01/22/preventing-xss-vulnerabilities-in-react>
+
+- Always sanitize the users' content that comes from forms.
+- Always prefer to serialize instead of JSON.stringify.
+- Use dangerouslySetInnerHTML only when absolutely necessary.
+- Do unit tests for all your components, and try to cover all the possible XSS attacks that some user could do.
+- Always encrypt the passwords with sha1 and md5 (together), and also add a salt value (for example, if the password is abc123, then your salt can be encrypted like this: sha1(md5('\$4lT3xt_abc123')).
+- If you use cookies to store sensitive information (personal information and passwords mainly), you can save the cookie with Base64 to obfuscate the data.
+- Add some protection to your APIs (using security tokens) unless you need to have a public API.
