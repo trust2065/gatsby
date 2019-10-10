@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import "../index.scss"
+import { getDisplayName } from "../functions"
 
 const IndexPage = ({ data }) => {
   const {
@@ -21,7 +22,7 @@ const IndexPage = ({ data }) => {
       <h2>Pages list</h2>
       <ul>
         <li>
-          <Link to="/page-2/">Go to page 2</Link>
+          <Link to="/page-2/">page 2</Link>
         </li>
         <li>
           <Link to="/styling_useStyles/">styling with useStyles demo</Link>
@@ -41,11 +42,12 @@ const IndexPage = ({ data }) => {
       <h2>Posts list</h2>
       <ul>
         {postList.map(post => {
-          const { path, title } = post.node.frontmatter
+          const { path } = post.node.frontmatter
+          const displayTitle = getDisplayName(post)
           const { id } = post.node
           return (
             <li key={id}>
-              <Link to={path}>{title}</Link>
+              <Link to={path}>{displayTitle}</Link>
             </li>
           )
         })}
@@ -66,6 +68,7 @@ export const pageQuery = graphql`
           frontmatter {
             path
             title
+            date
           }
         }
       }

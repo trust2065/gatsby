@@ -5,22 +5,19 @@ import Typography from "@material-ui/core/Typography"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { Box } from "@material-ui/core"
+import { getDisplayName } from "../functions"
 
 export default ({ data }) => {
   const { markdownRemark: post } = data
-  const displayTitle =
-    post.frontmatter.title !== "Diary"
-      ? post.frontmatter.title
-      : post.frontmatter.date
+  const displayTitle = getDisplayName(post)
 
+  console.log("displayTitle", displayTitle)
   return (
-    <Container maxWidth="sm" align="left">
+    <Container maxWidth="md" align="left">
       <Typography variant="h3" component="h1" m={2}>
         {displayTitle}
       </Typography>
-      <Typography color="textSecondary">
-        <MyPaper dangerouslySetInnerHTML={{ __html: post.html }}></MyPaper>
-      </Typography>
+      <MyPaper dangerouslySetInnerHTML={{ __html: post.html }}></MyPaper>
       <Box mt={2}>
         <Link to="/">Homepage</Link>
       </Box>
