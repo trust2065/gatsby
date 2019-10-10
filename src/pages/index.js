@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => {
       <ul>
         {postList.map(post => {
           const { path } = post.node.frontmatter
-          const displayTitle = getDisplayName(post)
+          const displayTitle = getDisplayName(post.node.frontmatter)
           const { id } = post.node
           return (
             <li key={id}>

@@ -9,7 +9,7 @@ import { getDisplayName } from "../functions"
 
 export default ({ data }) => {
   const { markdownRemark: post } = data
-  const displayTitle = getDisplayName(post)
+  const displayTitle = getDisplayName(post.frontmatter)
 
   console.log("displayTitle", displayTitle)
   return (

@@ -34,9 +34,8 @@ Follow up: If no response until Friday, contact him
 ### Kahar
 
 - Job title: Java developer
-- Personality: Don’t listen to others…
-
-Time waster, asking for Java role but I’m not interested in at all.
+- Personality: rush
+  Java role, but I’m not interested in at all.
 
 ### Zoe
 

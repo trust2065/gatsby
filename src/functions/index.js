@@ -1,4 +1,4 @@
-export const getDisplayName = post => {
-  const { title, date } = post.node.frontmatter
+export const getDisplayName = frontmatter => {
+  const { title, date } = frontmatter
   return title !== "Diary" ? title : date
 }
