@@ -5,8 +5,10 @@ module.exports = {
     author: `Choco Li`,
   },
   plugins: [
+    `gatsby-theme-material-ui`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

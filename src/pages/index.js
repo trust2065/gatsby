@@ -24,7 +24,17 @@ const IndexPage = ({ data }) => {
           <Link to="/page-2/">Go to page 2</Link>
         </li>
         <li>
-          <Link to="/page-3/">Go to page 3</Link>
+          <Link to="/styling_useStyles/">styling with useStyles demo</Link>
+        </li>
+        <li>
+          <Link to="/styling_createMuiTheme/">
+            styling with createMuiTheme demo
+          </Link>
+        </li>
+        <li>
+          <Link to="/styling_createMuiTheme_BoxTextColor/">
+            styling with createMuiTheme, styling Box text-color demo
+          </Link>
         </li>
       </ul>
       <hr />
