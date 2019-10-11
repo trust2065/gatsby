@@ -73,7 +73,6 @@ export default () => {
           >
             All styling options for Box
           </a>
-          {/* <List component="nav"> */}
           <List component="nav">{links}</List>
         </Box>
       </Container>

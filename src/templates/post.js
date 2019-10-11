@@ -14,6 +14,9 @@ export default ({ data }) => {
   console.log("displayTitle", displayTitle)
   return (
     <Container maxWidth="md" align="left">
+      <Box mb={2}>
+        <Link to="/">Homepage</Link>
+      </Box>
       <Typography variant="h3" component="h1" m={2}>
         {displayTitle}
       </Typography>
