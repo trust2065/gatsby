@@ -14,16 +14,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <h1>Hi people</h1>
-      <p>Let's find the most valuable stuff this week!</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
+      <p>This branch record dairies and demonstrate techniques</p>
       <hr />
-      <h2>Pages list</h2>
+      <h2>Demonstrate styling method with materialUI</h2>
       <ul>
-        <li>
-          <Link to="/page-2/">page 2</Link>
-        </li>
         <li>
           <Link to="/styling_useStyles/">styling with useStyles demo</Link>
         </li>
@@ -39,7 +33,7 @@ const IndexPage = ({ data }) => {
         </li>
       </ul>
       <hr />
-      <h2>Posts list</h2>
+      <h2>Diary</h2>
       <ul>
         {postList.map(post => {
           const { path } = post.node.frontmatter

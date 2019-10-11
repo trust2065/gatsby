@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Australia(NSW) priceline`,
+    title: `Choco Li, front-end react developer`,
     description: `Get best value, find things that worth to buy`,
     author: `Choco Li`,
   },
