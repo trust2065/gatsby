@@ -8,7 +8,7 @@ Record learning resources and notes
 
 ## Url
 
-<https://fervent-shannon-a32890.netlify.com/>
+https://gatsby-choco.netlify.com/
 
 ## Run
 
